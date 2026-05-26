@@ -16,7 +16,7 @@ import (
 	"github.com/rs/zerolog"
 )
 
-//go:embed migrations/*.sql
+
 var migrations embed.FS
 
 func Migrate(ctx context.Context, logger *zerolog.Logger, cfg *config.Config) error {
